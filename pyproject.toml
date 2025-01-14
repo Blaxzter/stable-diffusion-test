@@ -1,0 +1,32 @@
+[project]
+name = "stablediffusiontest"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Frederic Abraham",email = "mail@fabraham.dev"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets (>=3.2.0,<4.0.0)",
+    "torch (>=2.5.1,<3.0.0)",
+    "transformers (>=4.48.0,<5.0.0)",
+    "accelerate (>=1.2.1,<2.0.0)",
+    "diffusers[training] (>=0.32.1,<0.33.0)",
+    "torchvision (>=0.20.1,<0.21.0)",
+    "matplotlib (>=3.10.0,<4.0.0)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
+
+
+[tool.poetry.dependencies]
+torch = {source = "pytorch"}
+torchvision = {source = "pytorch"}
