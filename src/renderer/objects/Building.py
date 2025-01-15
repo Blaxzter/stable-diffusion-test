@@ -11,7 +11,7 @@ class Building:
     def __init__(self, config: BuildingConfig):
         self.config = config
         # Create expanded voxel space with padding for overhangs
-        padding = max(self.config.roof_overhang, 2)  # minimum padding of 2 for windows
+        padding = max(self.config.roof_overhang, 20)  # minimum padding of 2 for windows
         self.padding = padding
         self.voxels = np.zeros((
             config.length + 1 + (padding * 2),
@@ -114,7 +114,7 @@ class Building:
             create_window_row(0, self.config.width, second_height_range, -self.padding-1, False)
 
     def create_roof(self):
-        roof = Roof(self.voxels, self.config)
+        roof = Roof(self.voxels, self)
         roof.create_roof()
 
     def generate(self):

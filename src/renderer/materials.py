@@ -7,3 +7,6 @@ class Material(IntEnum):
     FLOOR = 3
     WINDOW = 4
     DOOR = 5
+    WOOL = 6
+    STAINED_GLASS = 7
+    GLASS = 8

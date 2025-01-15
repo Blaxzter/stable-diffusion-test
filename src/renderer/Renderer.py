@@ -20,6 +20,8 @@ class Renderer:
             Material.ROOF: [0.8, 0.2, 0.2],  # Red
             Material.WINDOW: [0.3, 0.7, 0.9],  # Light blue
             Material.DOOR: [0.4, 0.2, 0.1],  # Dark brown
+            Material.WOOL: [0.9, 0.9, 0.9],  # White
+            Material.STAINED_GLASS: [0.3, 0.3, 0.3],  #
         }
 
     def _create_cube_mesh(self, center: np.ndarray, color: List[float]) -> o3d.geometry.TriangleMesh:
