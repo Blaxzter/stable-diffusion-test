@@ -28,5 +28,7 @@ class Tower(Building):
     def generate(self):
         super().generate()
         if self.tower_config.has_battlements:
+            # remove roof
+            self.voxels[self.voxels == Material.ROOF] = Material.AIR
             self.create_battlements()
         self.create_floor_markers()

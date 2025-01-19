@@ -129,6 +129,22 @@ class CityPlanner:
         else:
             return Building(config)
 
+    def get_buildings(self) -> List[Dict]:
+        """Return all buildings with their configurations"""
+        buildings = []
+        for district_type, bounds_list in self.districts.items():
+            for bounds in bounds_list:
+                building_config = self.generate_building_config(
+                    district_type, 
+                    (bounds[0], 0, bounds[2])
+                )
+                buildings.append({
+                    "config": building_config,
+                    "bounds": bounds,
+                    "district_type": district_type
+                })
+        return buildings
+
 
 def main():
     # Create a world with larger size to accommodate districts
