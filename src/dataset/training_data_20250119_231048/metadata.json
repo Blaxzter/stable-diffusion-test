@@ -1,0 +1,1072 @@
+[
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 10x7m footprint, 5m tall, pitched roof",
+    "config": {
+      "width": 10,
+      "length": 7,
+      "height": 5,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 2,
+      "roof_height": 2,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 11x13m footprint, 9m tall, mansard roof",
+    "config": {
+      "width": 11,
+      "length": 13,
+      "height": 9,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 2,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 3,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 5x9m footprint, 4m tall, pitched roof",
+    "config": {
+      "width": 5,
+      "length": 9,
+      "height": 4,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 3,
+      "window_height": 2,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 8x13m footprint, 4m tall, pitched roof",
+    "config": {
+      "width": 8,
+      "length": 13,
+      "height": 4,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 3,
+      "window_height": 2,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 11x13m footprint, 4m tall, flat roof",
+    "config": {
+      "width": 11,
+      "length": 13,
+      "height": 4,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 2,
+      "roof_height": 2,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 6x13m footprint, 7m tall, mansard roof",
+    "config": {
+      "width": 6,
+      "length": 13,
+      "height": 7,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 2,
+      "roof_height": 2,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 3,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 11x14m footprint, 7m tall, flat roof",
+    "config": {
+      "width": 11,
+      "length": 14,
+      "height": 7,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 3,
+      "window_height": 2,
+      "roof_height": 2,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 6x5m footprint, 7m tall, mansard roof",
+    "config": {
+      "width": 6,
+      "length": 5,
+      "height": 7,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 3,
+      "window_height": 2,
+      "roof_height": 2,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 3,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 4x10m footprint, 8m tall, mansard roof",
+    "config": {
+      "width": 4,
+      "length": 10,
+      "height": 8,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 1,
+      "window_height": 2,
+      "roof_height": 2,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 3,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "residential",
+    "prompt": "A residential style voxel building - 11x4m footprint, 7m tall, pitched roof",
+    "config": {
+      "width": 11,
+      "length": 4,
+      "height": 7,
+      "door_height": 3,
+      "door_width": 2,
+      "window_size": 1,
+      "window_height": 2,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 18m tall medieval tower, with battlements, 3 floors",
+    "config": {
+      "width": 5,
+      "length": 6,
+      "height": 18,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 3,
+      "has_battlements": true,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 16m tall medieval tower, without battlements, 4 floors",
+    "config": {
+      "width": 6,
+      "length": 5,
+      "height": 16,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 4,
+      "has_battlements": false,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 18m tall medieval tower, without battlements, 4 floors",
+    "config": {
+      "width": 6,
+      "length": 6,
+      "height": 18,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 4,
+      "has_battlements": false,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 13m tall medieval tower, without battlements, 4 floors",
+    "config": {
+      "width": 5,
+      "length": 7,
+      "height": 13,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 4,
+      "has_battlements": false,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 15m tall medieval tower, with battlements, 4 floors",
+    "config": {
+      "width": 6,
+      "length": 5,
+      "height": 15,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 4,
+      "has_battlements": true,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 14m tall medieval tower, without battlements, 3 floors",
+    "config": {
+      "width": 5,
+      "length": 5,
+      "height": 14,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 3,
+      "has_battlements": false,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 16m tall medieval tower, without battlements, 3 floors",
+    "config": {
+      "width": 7,
+      "length": 7,
+      "height": 16,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 3,
+      "has_battlements": false,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 17m tall medieval tower, with battlements, 3 floors",
+    "config": {
+      "width": 5,
+      "length": 6,
+      "height": 17,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 3,
+      "has_battlements": true,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 16m tall medieval tower, without battlements, 4 floors",
+    "config": {
+      "width": 7,
+      "length": 6,
+      "height": 16,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 4,
+      "has_battlements": false,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "tower",
+    "prompt": "A tower style voxel building - 19m tall medieval tower, with battlements, 3 floors",
+    "config": {
+      "width": 7,
+      "length": 6,
+      "height": 19,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 2,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "num_floors": 3,
+      "has_battlements": true,
+      "window_style": "arrow_slit",
+      "tower_cap_style": 2
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 8m tall steeple, 10x12m footprint",
+    "config": {
+      "width": 10,
+      "length": 12,
+      "height": 11,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 8,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 6m tall steeple, 11x12m footprint",
+    "config": {
+      "width": 11,
+      "length": 12,
+      "height": 10,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 6,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 9m tall steeple, 11x19m footprint",
+    "config": {
+      "width": 11,
+      "length": 19,
+      "height": 10,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 9,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 9m tall steeple, 13x14m footprint",
+    "config": {
+      "width": 13,
+      "length": 14,
+      "height": 10,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 9,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 7m tall steeple, 10x12m footprint",
+    "config": {
+      "width": 10,
+      "length": 12,
+      "height": 11,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 7,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 6m tall steeple, 13x14m footprint",
+    "config": {
+      "width": 13,
+      "length": 14,
+      "height": 10,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 6,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 6m tall steeple, 13x12m footprint",
+    "config": {
+      "width": 13,
+      "length": 12,
+      "height": 9,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 6,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 9m tall steeple, 12x18m footprint",
+    "config": {
+      "width": 12,
+      "length": 18,
+      "height": 10,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 9,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 9m tall steeple, 13x16m footprint",
+    "config": {
+      "width": 13,
+      "length": 16,
+      "height": 11,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 9,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "church",
+    "prompt": "A church style voxel building - gothic church, with 7m tall steeple, 13x16m footprint",
+    "config": {
+      "width": 13,
+      "length": 16,
+      "height": 10,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "has_steeple": true,
+      "steeple_height": 7,
+      "window_style": "stained_glass",
+      "has_bell_tower": true,
+      "bell_tower_height": 18,
+      "bell_tower_width": 4,
+      "bell_tower_position": "left"
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - tailor shop, with display windows, pitched roof",
+    "config": {
+      "width": 9,
+      "length": 8,
+      "height": 4,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "tailor",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - bakery shop, with display windows, flat roof",
+    "config": {
+      "width": 7,
+      "length": 11,
+      "height": 6,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "bakery",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - tailor shop, with display windows, flat roof",
+    "config": {
+      "width": 7,
+      "length": 8,
+      "height": 5,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "tailor",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - tailor shop, with display windows, flat roof",
+    "config": {
+      "width": 7,
+      "length": 8,
+      "height": 4,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 1,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "tailor",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - bakery shop, with display windows, pitched roof",
+    "config": {
+      "width": 9,
+      "length": 11,
+      "height": 5,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 1,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "bakery",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - tailor shop, with display windows, flat roof",
+    "config": {
+      "width": 8,
+      "length": 9,
+      "height": 4,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "tailor",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - general shop, with display windows, flat roof",
+    "config": {
+      "width": 7,
+      "length": 9,
+      "height": 5,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "general",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - bakery shop, with display windows, flat roof",
+    "config": {
+      "width": 8,
+      "length": 8,
+      "height": 6,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 3,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "bakery",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - blacksmith shop, with display windows, flat roof",
+    "config": {
+      "width": 6,
+      "length": 11,
+      "height": 5,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 2,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "blacksmith",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  },
+  {
+    "style": "shop",
+    "prompt": "A shop style voxel building - tailor shop, with display windows, flat roof",
+    "config": {
+      "width": 8,
+      "length": 8,
+      "height": 4,
+      "door_height": 4,
+      "door_width": 2,
+      "window_size": 2,
+      "window_height": 3,
+      "roof_height": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": 0,
+      "roof_style": 0,
+      "roof_overhang": 1,
+      "roof_steepness": 2,
+      "shop_type": "tailor",
+      "has_display_window": true,
+      "awning_style": "stripe",
+      "storage_room": true
+    }
+  }
+]
