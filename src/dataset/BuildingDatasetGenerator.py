@@ -1,9 +1,9 @@
 import json
 from enum import Enum
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
-from datetime import datetime
 
 from src.classes.BuildingConfig import (
     BuildingConfig,
@@ -51,9 +51,33 @@ class BuildingDatasetGenerator:
                 }
                 dataset.append(building_data)
 
+        # Find maximum dimensions
+        max_x = max(len(d["voxels"]) for d in dataset)
+        max_y = max(len(d["voxels"][0]) if len(d["voxels"]) > 0 else 0 for d in dataset)
+        max_z = max(
+            (
+                len(d["voxels"][0][0])
+                if len(d["voxels"]) > 0 and len(d["voxels"][0]) > 0
+                else 0
+            )
+            for d in dataset
+        )
+
+        print(f"Maximum dimensions: {max_x}x{max_y}x{max_z}")
+
+        # Pad all voxels to the same size
+        padded_voxels = []
+        for d in dataset:
+            voxels = np.array(d["voxels"])
+            padded = np.zeros((max_x, max_y, max_z), dtype=voxels.dtype)
+            padded[: voxels.shape[0], : voxels.shape[1], : voxels.shape[2]] = voxels
+            padded_voxels.append(padded)
+
         # Save dataset
         print("Saving dataset...")
-        np.save(self.output_path / "voxels.npy", dataset)
+        voxels_array = np.array(padded_voxels)
+        np.save(self.output_path / "voxels.npy", voxels_array)
+        print(f"Dataset voxels shape: {voxels_array.shape}")
 
         # Save metadata
         metadata = [
@@ -162,6 +186,12 @@ class BuildingDatasetGenerator:
 
 
 if __name__ == "__main__":
+    dataset_path = Path("training_data")
     current_date_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-    generator = BuildingDatasetGenerator("training_data_" + current_date_str)
-    generator.generate_dataset(buildings_per_style=10)
+    buildings_per_style = 250
+    dataset_path = (
+        dataset_path / f"n{buildings_per_style}_training_data_{current_date_str}"
+    )
+
+    generator = BuildingDatasetGenerator(dataset_path)
+    generator.generate_dataset(buildings_per_style=buildings_per_style)

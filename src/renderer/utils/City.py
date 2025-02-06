@@ -4,7 +4,14 @@ from enum import Enum
 
 from src.renderer.Renderer import Renderer
 from src.renderer.World import World
-from src.classes.BuildingConfig import BuildingConfig, Orientation, RoofStyle, TowerConfig, ChurchConfig, ShopConfig
+from src.classes.BuildingConfig import (
+    BuildingConfig,
+    Orientation,
+    RoofStyle,
+    TowerConfig,
+    ChurchConfig,
+    ShopConfig,
+)
 from src.renderer.objects.Building import Building
 from src.renderer.objects.Church import Church
 from src.renderer.objects.Shop import Shop
@@ -34,12 +41,14 @@ class CityPlanner:
         # Create district map
         for x in range(x_districts):
             for z in range(z_districts):
-                district_type = np.random.choice(list(DistrictType), p=[0.4, 0.3, 0.1, 0.1, 0.1])
+                district_type = np.random.choice(
+                    list(DistrictType), p=[0.4, 0.3, 0.1, 0.1, 0.1]
+                )
                 district_bounds = (
                     x * district_size,
                     (x + 1) * district_size,
                     z * district_size,
-                    (z + 1) * district_size
+                    (z + 1) * district_size,
                 )
                 if district_type not in self.districts:
                     self.districts[district_type] = []
@@ -49,21 +58,22 @@ class CityPlanner:
         """Determine which district a position falls into"""
         for district_type, bounds_list in self.districts.items():
             for bounds in bounds_list:
-                if (bounds[0] <= pos_x <= bounds[1] and
-                        bounds[2] <= pos_z <= bounds[3]):
+                if bounds[0] <= pos_x <= bounds[1] and bounds[2] <= pos_z <= bounds[3]:
                     return district_type
         return DistrictType.MIXED
 
-    def generate_building_config(self, district_type: DistrictType, pos: Tuple[int, int, int]) -> Any:
+    def generate_building_config(
+        self, district_type: DistrictType, pos: Tuple[int, int, int]
+    ) -> Any:
         """Generate appropriate building config based on district type"""
         base_ranges = {
-            'width': (4, 12),
-            'length': (4, 15),
-            'height': (4, 10),
-            'roof_height': (2, 4),
-            'door_height': (3, 4),
-            'window_height': (2, 3),
-            'window_size': (1, 4)
+            "width": (4, 12),
+            "length": (4, 15),
+            "height": (4, 10),
+            "roof_height": (2, 4),
+            "door_height": (3, 4),
+            "window_height": (2, 3),
+            "window_size": (1, 4),
         }
 
         if district_type == DistrictType.MEDIEVAL:
@@ -75,7 +85,7 @@ class CityPlanner:
                 has_battlements=np.random.choice([True, False]),
                 position=pos,
                 orientation=np.random.choice(list(Orientation)),
-                roof_style=RoofStyle.PYRAMID
+                roof_style=RoofStyle.PYRAMID,
             )
 
         elif district_type == DistrictType.RELIGIOUS:
@@ -87,7 +97,7 @@ class CityPlanner:
                 steeple_height=np.random.randint(6, 10),
                 position=pos,
                 orientation=np.random.choice(list(Orientation)),
-                roof_style=RoofStyle.PITCHED
+                roof_style=RoofStyle.PITCHED,
             )
 
         elif district_type == DistrictType.COMMERCIAL:
@@ -96,26 +106,28 @@ class CityPlanner:
                 length=np.random.randint(8, 12),
                 height=np.random.randint(4, 7),
                 has_display_window=True,
-                shop_type=np.random.choice(['bakery', 'blacksmith', 'tailor', 'general']),
+                shop_type=np.random.choice(
+                    ["bakery", "blacksmith", "tailor", "general"]
+                ),
                 position=pos,
                 orientation=np.random.choice(list(Orientation)),
-                roof_style=np.random.choice([RoofStyle.FLAT, RoofStyle.PITCHED])
+                roof_style=np.random.choice([RoofStyle.FLAT, RoofStyle.PITCHED]),
             )
 
         else:  # RESIDENTIAL or MIXED
             return BuildingConfig(
-                width=np.random.randint(*base_ranges['width']),
-                length=np.random.randint(*base_ranges['length']),
-                height=np.random.randint(*base_ranges['height']),
-                roof_height=np.random.randint(*base_ranges['roof_height']),
-                door_height=np.random.randint(*base_ranges['door_height']),
-                window_height=np.random.randint(*base_ranges['window_height']),
-                window_size=np.random.randint(*base_ranges['window_size']),
+                width=np.random.randint(*base_ranges["width"]),
+                length=np.random.randint(*base_ranges["length"]),
+                height=np.random.randint(*base_ranges["height"]),
+                roof_height=np.random.randint(*base_ranges["roof_height"]),
+                door_height=np.random.randint(*base_ranges["door_height"]),
+                window_height=np.random.randint(*base_ranges["window_height"]),
+                window_size=np.random.randint(*base_ranges["window_size"]),
                 position=pos,
                 orientation=np.random.choice(list(Orientation)),
                 roof_style=np.random.choice(list(RoofStyle)),
                 roof_overhang=np.random.randint(1, 3),
-                roof_steepness=np.random.randint(1, 4)
+                roof_steepness=np.random.randint(1, 4),
             )
 
     def create_building(self, config: Any) -> Building:
@@ -135,14 +147,15 @@ class CityPlanner:
         for district_type, bounds_list in self.districts.items():
             for bounds in bounds_list:
                 building_config = self.generate_building_config(
-                    district_type, 
-                    (bounds[0], 0, bounds[2])
+                    district_type, (bounds[0], 0, bounds[2])
                 )
-                buildings.append({
-                    "config": building_config,
-                    "bounds": bounds,
-                    "district_type": district_type
-                })
+                buildings.append(
+                    {
+                        "config": building_config,
+                        "bounds": bounds,
+                        "district_type": district_type,
+                    }
+                )
         return buildings
 
 
@@ -182,37 +195,39 @@ def main():
 
         attempts += 1
 
-    print(f"\nSuccessfully placed {added_buildings} buildings after {attempts} attempts")
+    print(
+        f"\nSuccessfully placed {added_buildings} buildings after {attempts} attempts"
+    )
 
     # Create renderer with enhanced color schemes
     renderer = Renderer(scale_factor=0.95)
 
     # Enhanced color schemes based on building types
     color_schemes = {
-        'medieval': {
-            'wall': [0.6, 0.6, 0.6],  # Gray stone
-            'roof': [0.3, 0.3, 0.3],  # Dark gray
-            'floor': [0.5, 0.5, 0.5]
+        "medieval": {
+            "wall": [0.6, 0.6, 0.6],  # Gray stone
+            "roof": [0.3, 0.3, 0.3],  # Dark gray
+            "floor": [0.5, 0.5, 0.5],
         },
-        'religious': {
-            'wall': [0.9, 0.9, 0.8],  # Light stone
-            'roof': [0.7, 0.2, 0.2],  # Red
-            'floor': [0.6, 0.6, 0.6]
+        "religious": {
+            "wall": [0.9, 0.9, 0.8],  # Light stone
+            "roof": [0.7, 0.2, 0.2],  # Red
+            "floor": [0.6, 0.6, 0.6],
         },
-        'commercial': {
-            'wall': [0.8, 0.6, 0.4],  # Tan
-            'roof': [0.4, 0.2, 0.1],  # Brown
-            'floor': [0.5, 0.5, 0.5]
+        "commercial": {
+            "wall": [0.8, 0.6, 0.4],  # Tan
+            "roof": [0.4, 0.2, 0.1],  # Brown
+            "floor": [0.5, 0.5, 0.5],
         },
-        'residential': {
-            'wall': [0.75, 0.55, 0.35],  # Wood
-            'roof': [0.8, 0.2, 0.2],  # Red clay
-            'floor': [0.4, 0.4, 0.4]
-        }
+        "residential": {
+            "wall": [0.75, 0.55, 0.35],  # Wood
+            "roof": [0.8, 0.2, 0.2],  # Red clay
+            "floor": [0.4, 0.4, 0.4],
+        },
     }
 
     # Set default color scheme
-    renderer.set_color_scheme(color_schemes['residential'])
+    renderer.set_color_scheme(color_schemes["residential"])
 
     # Configure and render the world
     print("Rendering world...")

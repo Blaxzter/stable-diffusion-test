@@ -173,3 +173,6 @@ cython_debug/
 #ide
 .idea/
 .vscode/
+
+#training data
+training_data/

@@ -14,13 +14,13 @@ class Shop(Building):
         p = self.padding
         # Create larger window at front based on orientation
         if self.config.orientation == Orientation.NORTH:
-            self.voxels[p + 2:-p - 2, 1:4, p:p + 1] = Material.WINDOW
+            self.voxels[p + 2 : -p - 2, 1:4, p : p + 1] = Material.WINDOW
         elif self.config.orientation == Orientation.SOUTH:
-            self.voxels[p + 2:-p - 2, 1:4, -p - 1:-p] = Material.WINDOW
+            self.voxels[p + 2 : -p - 2, 1:4, -p - 1 : -p] = Material.WINDOW
         elif self.config.orientation == Orientation.EAST:
-            self.voxels[-p - 1:-p, 1:4, p + 2:-p - 2] = Material.WINDOW
+            self.voxels[-p - 1 : -p, 1:4, p + 2 : -p - 2] = Material.WINDOW
         elif self.config.orientation == Orientation.WEST:
-            self.voxels[p:p + 1, 1:4, p + 2:-p - 2] = Material.WINDOW
+            self.voxels[p : p + 1, 1:4, p + 2 : -p - 2] = Material.WINDOW
 
     def create_awning(self):
         p = self.padding
@@ -28,13 +28,21 @@ class Shop(Building):
 
         # Create awning based on orientation
         if self.config.orientation == Orientation.NORTH:
-            self.voxels[p + 1:-p - 1, height:height + 1, p - 1:p + 2] = Material.WOOL
+            self.voxels[p + 1 : -p - 1, height : height + 1, p - 1 : p + 2] = (
+                Material.WOOL
+            )
         elif self.config.orientation == Orientation.SOUTH:
-            self.voxels[p + 1:-p - 1, height:height + 1, -p - 2:-p + 1] = Material.WOOL
+            self.voxels[p + 1 : -p - 1, height : height + 1, -p - 2 : -p + 1] = (
+                Material.WOOL
+            )
         elif self.config.orientation == Orientation.EAST:
-            self.voxels[-p - 2:-p + 1, height:height + 1, p + 1:-p - 1] = Material.WOOL
+            self.voxels[-p - 2 : -p + 1, height : height + 1, p + 1 : -p - 1] = (
+                Material.WOOL
+            )
         elif self.config.orientation == Orientation.WEST:
-            self.voxels[p - 1:p + 2, height:height + 1, p + 1:-p - 1] = Material.WOOL
+            self.voxels[p - 1 : p + 2, height : height + 1, p + 1 : -p - 1] = (
+                Material.WOOL
+            )
 
     def generate(self):
         super().generate()

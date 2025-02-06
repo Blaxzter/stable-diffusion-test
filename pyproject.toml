@@ -30,3 +30,6 @@ priority = "explicit"
 [tool.poetry.dependencies]
 torch = {source = "pytorch"}
 torchvision = {source = "pytorch"}
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.1.0"

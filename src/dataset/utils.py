@@ -20,10 +20,10 @@ class ComplexEncoder(json.JSONEncoder):
             return obj
         if hasattr(obj, "__dict__"):
             return self._clean_dict(obj.__dict__)
-        
+
         # log the type of obj that was not serialized
         print(f"Type not serializable: {type(obj)}")
-        
+
         return super().default(obj)
 
     def _clean_dict(self, d: Dict) -> Dict:

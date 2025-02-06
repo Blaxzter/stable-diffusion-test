@@ -47,7 +47,7 @@ class CodeChangeHandler(FileSystemEventHandler):
             pass
 
     def on_modified(self, event):
-        if event.is_directory or not event.src_path.endswith('.py'):
+        if event.is_directory or not event.src_path.endswith(".py"):
             return
 
         # Implement cooldown
@@ -68,7 +68,7 @@ class CodeChangeHandler(FileSystemEventHandler):
             self.current_process = subprocess.Popen(
                 [sys.executable, self.main_script],
                 stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE
+                stderr=subprocess.PIPE,
             )
             print("\nCity regeneration started!")
             print("\nWatching for changes...")
@@ -86,9 +86,7 @@ def watch_directory(path=".", main_script="main.py"):
     # Initial run
     print("Running initial generation...")
     event_handler.current_process = subprocess.Popen(
-        [sys.executable, main_script],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE
+        [sys.executable, main_script], stdout=subprocess.PIPE, stderr=subprocess.PIPE
     )
 
     observer.schedule(event_handler, path, recursive=True)
@@ -112,5 +110,5 @@ def watch_directory(path=".", main_script="main.py"):
 if __name__ == "__main__":
     current_dir = os.path.dirname(os.path.abspath(__file__))
     main_script = "./renderer/utils/City.py"
-    src_dir = './renderer'
+    src_dir = "./renderer"
     watch_directory(src_dir, main_script)

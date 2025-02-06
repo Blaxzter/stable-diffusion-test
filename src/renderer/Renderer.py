@@ -24,21 +24,42 @@ class Renderer:
             Material.STAINED_GLASS: [0.3, 0.3, 0.3],  #
         }
 
-    def _create_cube_mesh(self, center: np.ndarray, color: List[float]) -> o3d.geometry.TriangleMesh:
+    def _create_cube_mesh(
+        self, center: np.ndarray, color: List[float]
+    ) -> o3d.geometry.TriangleMesh:
         """Create a single cube mesh with the specified color"""
-        vertices = np.array([
-            [-0.5, -0.5, -0.5], [0.5, -0.5, -0.5], [-0.5, 0.5, -0.5], [0.5, 0.5, -0.5],
-            [-0.5, -0.5, 0.5], [0.5, -0.5, 0.5], [-0.5, 0.5, 0.5], [0.5, 0.5, 0.5]
-        ]) + center
+        vertices = (
+            np.array(
+                [
+                    [-0.5, -0.5, -0.5],
+                    [0.5, -0.5, -0.5],
+                    [-0.5, 0.5, -0.5],
+                    [0.5, 0.5, -0.5],
+                    [-0.5, -0.5, 0.5],
+                    [0.5, -0.5, 0.5],
+                    [-0.5, 0.5, 0.5],
+                    [0.5, 0.5, 0.5],
+                ]
+            )
+            + center
+        )
 
-        triangles = np.array([
-            [0, 2, 1], [1, 2, 3],  # front
-            [1, 3, 5], [5, 3, 7],  # right
-            [5, 7, 4], [4, 7, 6],  # back
-            [4, 6, 0], [0, 6, 2],  # left
-            [2, 6, 3], [3, 6, 7],  # top
-            [0, 1, 4], [4, 1, 5]  # bottom
-        ])
+        triangles = np.array(
+            [
+                [0, 2, 1],
+                [1, 2, 3],  # front
+                [1, 3, 5],
+                [5, 3, 7],  # right
+                [5, 7, 4],
+                [4, 7, 6],  # back
+                [4, 6, 0],
+                [0, 6, 2],  # left
+                [2, 6, 3],
+                [3, 6, 7],  # top
+                [0, 1, 4],
+                [4, 1, 5],  # bottom
+            ]
+        )
 
         mesh = o3d.geometry.TriangleMesh()
         mesh.vertices = o3d.utility.Vector3dVector(vertices)
@@ -78,7 +99,9 @@ class Renderer:
 
             # Configure render options
             render_option = vis.get_render_option()
-            render_option.background_color = np.array([0.7, 0.7, 0.7])  # Light gray background
+            render_option.background_color = np.array(
+                [0.7, 0.7, 0.7]
+            )  # Light gray background
             render_option.point_size = 1
             render_option.show_coordinate_frame = True
 
@@ -95,8 +118,8 @@ class Renderer:
         """Update the color scheme for different materials"""
         # Convert string keys to Material enum values
         material_colors = {
-            Material.FLOOR: color_map.get('floor', self.color_map[Material.FLOOR]),
-            Material.STONE: color_map.get('wall', self.color_map[Material.STONE]),
-            Material.ROOF: color_map.get('roof', self.color_map[Material.ROOF]),
+            Material.FLOOR: color_map.get("floor", self.color_map[Material.FLOOR]),
+            Material.STONE: color_map.get("wall", self.color_map[Material.STONE]),
+            Material.ROOF: color_map.get("roof", self.color_map[Material.ROOF]),
         }
         self.color_map.update(material_colors)
